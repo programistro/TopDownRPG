@@ -1,0 +1,236 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Editor.Windows.Debug|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Editor.Windows.Debug|x64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win64\\Debug\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Editor.Windows.Debug|ARM64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Editor.Windows.Debug|ARM64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Debug\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Editor.Windows.Development|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Editor.Windows.Development|x64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win64\\Development\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Editor.Windows.Development|ARM64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Editor.Windows.Development|ARM64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Development\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Editor.Windows.Release|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Editor.Windows.Release|x64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win64\\Release\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Editor.Windows.Release|ARM64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Editor.Windows.Release|ARM64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Release\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Debug|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Debug|x64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win64\\Debug\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Debug|Win32 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Debug|Win32",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Debug\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Debug|ARM64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Debug|ARM64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Debug\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Development|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Development|x64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win64\\Development\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Development|Win32 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Development|Win32",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Development\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Development|ARM64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Development|ARM64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Development\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Release|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Release|x64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win64\\Release\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Release|Win32 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Release|Win32",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Release\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG|Game.Windows.Release|ARM64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "TopDownRPG|Game.Windows.Release|ARM64",
+			"cwd": "C:\\Projects\\Flax\\TopDownRPG",
+			"program": "C:\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Editor\\Win32\\Release\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Projects\\Flax\\TopDownRPG",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "TopDownRPG (C# Attach Editor)",
+			"request": "attach",
+			"processName": "FlaxEditor"
+		}
+	]
+}

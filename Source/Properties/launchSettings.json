@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "Game": {
+      "commandName": "Executable",
+      "workingDirectory": "C:/Projects/Flax/TopDownRPG",
+      "executablePath": "C:/Users/Katana/AppData/Local/SeedLauncher/Versions/1.11/Binaries/Editor/Win64/Development/FlaxEditor.exe",
+      "commandLineArgs": "-project \"C:/Projects/Flax/TopDownRPG\"",
+      "nativeDebugging": false
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "TopDownRPG|Editor.Windows.Debug|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=x64",
+				"-configuration=Debug",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Editor.Windows.Debug|ARM64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=ARM64",
+				"-configuration=Debug",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Editor.Windows.Development|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=x64",
+				"-configuration=Development",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Editor.Windows.Development|ARM64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=ARM64",
+				"-configuration=Development",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Editor.Windows.Release|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=x64",
+				"-configuration=Release",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Editor.Windows.Release|ARM64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=ARM64",
+				"-configuration=Release",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Debug|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=x64",
+				"-configuration=Debug",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Debug|Win32",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=Win32",
+				"-configuration=Debug",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Debug|ARM64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=ARM64",
+				"-configuration=Debug",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Development|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=x64",
+				"-configuration=Development",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Development|Win32",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=Win32",
+				"-configuration=Development",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Development|ARM64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=ARM64",
+				"-configuration=Development",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Release|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=x64",
+				"-configuration=Release",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Release|Win32",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=Win32",
+				"-configuration=Release",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		},
+		{
+			"label": "TopDownRPG|Game.Windows.Release|ARM64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\Users\\Katana\\AppData\\Local\\SeedLauncher\\Versions\\1.11\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Projects\\Flax\\TopDownRPG\\\"",
+				"-arch=ARM64",
+				"-configuration=Release",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Projects\\Flax\\TopDownRPG"
+			}
+		}
+	]
+}
