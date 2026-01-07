@@ -100,32 +100,6 @@
 			"CustomTexture": "1e1fb3a7447c1265b15967b480549d98"
 		},
 		{
-			"ID": "b0d72c3746caebca055e1f921ca21c7c",
-			"TypeName": "FlaxEngine.Camera",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Camera",
-			"Transform": {
-				"Translation": {
-					"X": -198.75326538085938,
-					"Y": 196.89071655273438,
-					"Z": 190.70037841796875
-				},
-				"Orientation": {
-					"X": 0.06189095228910446,
-					"Y": 0.9198267459869385,
-					"Z": -0.1617070734500885,
-					"W": 0.35204988718032837
-				}
-			},
-			"StaticFlags": 0
-		},
-		{
-			"ID": "9053ad38428b10594c741db78d7fcca5",
-			"TypeName": "FreeCamera",
-			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
-			"V": {}
-		},
-		{
 			"ID": "4a9d87134ab42f4294db6bbcf1902bde",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -138,9 +112,9 @@
 					"W": -0.7071064710617065
 				},
 				"Scale": {
-					"X": 2.049309253692627,
+					"X": 8.29886531829834,
 					"Y": 0.5,
-					"Z": 2.049309253692627
+					"Z": 8.29886531829834
 				}
 			},
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
@@ -162,59 +136,92 @@
 			"Name": "BoxCollider"
 		},
 		{
-			"ID": "2bf9470443eda6ed75058987301e5be2",
-			"TypeName": "FlaxEngine.AnimatedModel",
+			"ID": "84581bed4ee80c478368ec981e2dabde",
+			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "mannequinModel 0",
+			"Name": "Player",
 			"Transform": {
 				"Translation": {
-					"X": -79.53018188476563,
-					"Y": 42.961151123046875,
-					"Z": -48.90257263183594
+					"X": 0.0,
+					"Y": 141.11119079589844,
+					"Z": 0.0
+				}
+			}
+		},
+		{
+			"ID": "b0d72c3746caebca055e1f921ca21c7c",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": -329.7515869140625,
+					"Y": 378.38189697265625,
+					"Z": 437.35772705078125
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9474953413009644,
+					"Z": 0.0,
+					"W": 0.3197697699069977
 				}
 			},
-			"SkinnedModel": "bfa21a7440846d47e057e0a23d219ef6",
-			"AnimationGraph": "6f9cd24f4507dd0f052b7ca1159ac741",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "9053ad38428b10594c741db78d7fcca5",
+			"TypeName": "FreeCamera",
+			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"V": {
+	"Target": "fdb627b1425f698a97f008aefcf978dc",
+	"MoveSpeed": 5.6,
+	"CameraSmoothing": 6.0
+}
+		},
+		{
+			"ID": "fdb627b1425f698a97f008aefcf978dc",
+			"PrefabID": "0bb80bca4004f13532b49bb606846836",
+			"PrefabObjectID": "41f00e30407aef6d997da6bf1dccbba3",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 41.71776580810547,
+					"Z": 0.0
+				}
+			}
+		},
+		{
+			"ID": "8215e6a64dc92d25eed7449c4644eaa4",
+			"PrefabID": "0bb80bca4004f13532b49bb606846836",
+			"PrefabObjectID": "135ce5d74fa294d170374a85a0d2dd5b",
+			"ParentID": "fdb627b1425f698a97f008aefcf978dc",
+			"V": {
+	"Prefab": "0bb80bca4004f13532b49bb606846836"
+},
+			"Enabled": false
+		},
+		{
+			"ID": "2bf9470443eda6ed75058987301e5be2",
+			"PrefabID": "0bb80bca4004f13532b49bb606846836",
+			"PrefabObjectID": "7d59946f463bd4c17a3a54b1280654e8",
+			"ParentID": "fdb627b1425f698a97f008aefcf978dc",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{},
+					{},
+					{},
+					{},
+					{},
+					{}
 				]
 			}
+		},
+		{
+			"ID": "f656d4b54c8fe9bcc7377c8e73642565",
+			"PrefabID": "0bb80bca4004f13532b49bb606846836",
+			"PrefabObjectID": "d5b56c3242d5653b683e0ca1a60821cd",
+			"ParentID": "fdb627b1425f698a97f008aefcf978dc"
 		}
 	]
 }

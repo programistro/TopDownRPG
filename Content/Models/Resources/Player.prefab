@@ -1,0 +1,93 @@
+{
+	"ID": "0bb80bca4004f13532b49bb606846836",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6802,
+	"Data": [
+	{
+		"ID": "41f00e30407aef6d997da6bf1dccbba3",
+		"TypeName": "FlaxEngine.RigidBody",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "RigidBody",
+		"Mass": 216.97933959960935,
+		"Constraints": 40,
+		"EnableGravity": false
+	},
+	{
+		"ID": "135ce5d74fa294d170374a85a0d2dd5b",
+		"TypeName": "Game.Player",
+		"ParentID": "41f00e30407aef6d997da6bf1dccbba3",
+		"V": {
+			"RigidBody": "41f00e30407aef6d997da6bf1dccbba3",
+			"MoveSpeed": 32.1
+		}
+	},
+	{
+		"ID": "7d59946f463bd4c17a3a54b1280654e8",
+		"TypeName": "FlaxEngine.AnimatedModel",
+		"ParentID": "41f00e30407aef6d997da6bf1dccbba3",
+		"Name": "model",
+		"SkinnedModel": "bfa21a7440846d47e057e0a23d219ef6",
+		"AnimationGraph": "6f9cd24f4507dd0f052b7ca1159ac741",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "d5b56c3242d5653b683e0ca1a60821cd",
+		"TypeName": "FlaxEngine.CapsuleCollider",
+		"ParentID": "41f00e30407aef6d997da6bf1dccbba3",
+		"Name": "CapsuleCollider",
+		"Transform": {
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"Center": {
+			"X": 88.0,
+			"Y": 0.0,
+			"Z": 0.0
+		},
+		"Height": 146.0
+	}
+]
+}
