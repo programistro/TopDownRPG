@@ -43,9 +43,21 @@ public class FreeCamera : Script
         var inputX = Input.GetAxis("Horizontal");
         var inputY = Input.GetAxis("Vertical");
         
+        
+        
         Vector3 move = new  Vector3(inputX, 0, inputY);
         
         move.Normalize();
+        var camTrans = Actor.Transform;
+        move = camTrans.TransformDirection(move);
+        camTrans.Translation += move * MoveSpeed;
+        if (Input.Mouse.GetButton(MouseButton.Middle))
+        {
+            var camFactor = Mathf.Saturate(CameraSmoothing * Time.DeltaTime);
+            Debug.Log($"camFactor: {camFactor}");
+            camTrans.Orientation = Quaternion.Lerp(camTrans.Orientation, Quaternion.Euler(pitch, yaw, 0), camFactor);
+        }
+        Actor.Transform = camTrans;
         
         if (move != Vector3.Zero)
         {
@@ -53,19 +65,6 @@ public class FreeCamera : Script
             Debug.Log("Moving " + move);
         }
         
-        Debug.Log(Vector3.Up + "up");
-        if (Input.Mouse.GetButton(MouseButton.Middle))
-        {
-            var camTrans = Actor.Transform;
-            move.Normalize();
-            move = camTrans.TransformDirection(move);
-            
-            camTrans.Translation += move * MoveSpeed;
-            var camFactor = Mathf.Saturate(CameraSmoothing * Time.DeltaTime);
-            Debug.Log($"camFactor: {camFactor}");
-            camTrans.Orientation = Quaternion.Lerp(camTrans.Orientation, Quaternion.Euler(pitch, yaw, 0), camFactor);
-            Actor.Transform = camTrans;
-        }
 
         var scroll = Input.Mouse.ScrollDelta;
         if (scroll != 0)
