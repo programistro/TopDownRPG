@@ -160,10 +160,10 @@
 					"Z": 437.35772705078125
 				},
 				"Orientation": {
-					"X": 0.1751593053340912,
-					"Y": 0.7159469127655029,
-					"Z": -0.1606065332889557,
-					"W": 0.6564639210700989
+					"X": 0.1574118286371231,
+					"Y": 0.7806439995765686,
+					"Z": -0.17803584039211273,
+					"W": 0.5780308842658997
 				}
 			},
 			"StaticFlags": 0
@@ -174,7 +174,7 @@
 			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
 			"V": {
 	"Target": "fdb627b1425f698a97f008aefcf978dc",
-	"MoveSpeed": 5.6,
+	"MoveSpeed": 94.3,
 	"CameraSmoothing": 6.0
 }
 		},
@@ -221,7 +221,8 @@
 			"ID": "f656d4b54c8fe9bcc7377c8e73642565",
 			"PrefabID": "0bb80bca4004f13532b49bb606846836",
 			"PrefabObjectID": "d5b56c3242d5653b683e0ca1a60821cd",
-			"ParentID": "fdb627b1425f698a97f008aefcf978dc"
+			"ParentID": "fdb627b1425f698a97f008aefcf978dc",
+			"Tag": "Player"
 		}
 	]
 }

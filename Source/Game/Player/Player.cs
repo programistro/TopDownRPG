@@ -71,8 +71,6 @@ public class Player : Script
     {
         if (Input.GetMouseButtonDown((MouseButton.Left)))
         {
-            if (!Input.GetMouseButtonDown(MouseButton.Left))
-                return;
             var pos = Input.MousePosition;
             var ray = Camera.MainCamera.ConvertMouseToRay(pos);
             if (!Physics.RayCast(ray.Position, ray.Direction, out var hit))

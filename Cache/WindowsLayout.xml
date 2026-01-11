@@ -14,7 +14,7 @@
 				<Window Typename="::FlaxEditor.Windows.ToolboxWindow" />
 			</Panel>
 		</Panel>
-		<Panel DockState="9" SplitterValue="0.20253164" SelectedTab="2">
+		<Panel DockState="9" SplitterValue="0.35337555" SelectedTab="1">
 			<Window Typename="::FlaxEditor.Windows.ContentWindow">
 				<Data Split="0.2" Scale="1" ShowFileExtensions="False" ShowEngineFiles="True" ShowPluginsFiles="True" ShowAllFiles="True" ShowGeneratedFiles="False" ViewType="Tiles" />
 			</Window>
@@ -33,6 +33,6 @@
 		<Window Typename="::FlaxEditor.Windows.GameWindow">
 			<Data ShowGUI="True" EditGUI="True" ShowDebugDraw="False" DefaultViewportScalingIndex="0" CustomViewportScalingIndex="-1" />
 		</Window>
-		<Bounds X="1920" Y="24" Width="1920" Height="1013" IsMaximized="False" IsMinimized="False" />
+		<Bounds X="1920" Y="24" Width="1920" Height="1013" IsMaximized="True" IsMinimized="False" />
 	</Float>
 </DockPanelLayout>

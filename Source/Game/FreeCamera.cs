@@ -19,6 +19,9 @@ public class FreeCamera : Script
 
     public override void OnStart()
     {
+        Screen.CursorVisible = true;
+        Screen.CursorLock = mode;
+        
         var initialEulerAngles = Actor.Orientation.EulerAngles;
         pitch = initialEulerAngles.X;
         yaw = initialEulerAngles.Y;
@@ -28,43 +31,45 @@ public class FreeCamera : Script
 
     public override void OnUpdate()
     {
-        Screen.CursorVisible = true;
-        Screen.CursorLock = mode;
+        if (Input.GetMouseButtonDown(MouseButton.Left))
+        {
+            var pos = Input.MousePosition;
+            var ray = Camera.MainCamera.ConvertMouseToRay(pos);
+            if (!Physics.RayCast(ray.Position, ray.Direction, out var hit))
+                return;
 
-        var mouseDelta = new Float2(Input.GetAxis("Mouse X"), Target.Position.Z);
-        pitch = Mathf.Clamp(pitch + mouseDelta.Y, -88, 88);
-        yaw += mouseDelta.X;
+            if (hit.Collider.Tag == "Player")
+            {
+                // Actor.Position = hit.Point;
+                Actor.LookAt(Target.Position, Vector3.Up);
+            }
+        }
     }
 
     public override void OnFixedUpdate()
     {
-        // Actor.LookAt(Target.Position, Vector3.Up);
-        
         var inputX = Input.GetAxis("Horizontal");
         var inputY = Input.GetAxis("Vertical");
-        
-        
         
         Vector3 move = new  Vector3(inputX, 0, inputY);
         
         move.Normalize();
         var camTrans = Actor.Transform;
         move = camTrans.TransformDirection(move);
-        camTrans.Translation += move * MoveSpeed;
+        move.Y = 0;
+        camTrans.Translation += move * MoveSpeed * Time.DeltaTime;
         if (Input.Mouse.GetButton(MouseButton.Middle))
         {
+            var mouseDelta = new Float2(Input.GetAxis("Mouse X"), Target.Position.Z);
+            pitch = Mathf.Clamp(pitch + mouseDelta.Y, -88, 88);
+            yaw += mouseDelta.X;
+            
             var camFactor = Mathf.Saturate(CameraSmoothing * Time.DeltaTime);
-            Debug.Log($"camFactor: {camFactor}");
             camTrans.Orientation = Quaternion.Lerp(camTrans.Orientation, Quaternion.Euler(pitch, yaw, 0), camFactor);
+            Debug.Log($"pitch  = {pitch}");
+            Debug.Log($"yaw  = {yaw}");
         }
         Actor.Transform = camTrans;
-        
-        if (move != Vector3.Zero)
-        {
-            Transform.TransformDirection(move);
-            Debug.Log("Moving " + move);
-        }
-        
 
         var scroll = Input.Mouse.ScrollDelta;
         if (scroll != 0)
@@ -80,10 +85,8 @@ public class FreeCamera : Script
             
             var newDistance = Mathf.Clamp(distance - delta, MinDistance, MaxDistance);
             
-            Actor.Position = Target.Position - dir * newDistance;
+            Actor.Position = Target.Position - dir *  newDistance;
             Debug.Log(Target.Position - dir * newDistance);
         }
     }
 }
-
-//todo сделать Lock (bool) систему, когда игрок кликнул на иконку персонажа камера вращалась на игрока, а когда нет то свободаня камера
