@@ -369,8 +369,11 @@
 
   <ItemGroup>
     <Compile Include="Game.Gen.cs" />
+    <Compile Include="Game\Camera\FreeCamera.cs" />
+    <Compile Include="Game\Camera\SpringArmCamera.cs" />
+    <Compile Include="Game\CounterFPS.cs" />
+    <Compile Include="Game\Cursor.cs" />
     <Compile Include="Game\ExitOnEsc.cs" />
-    <Compile Include="Game\FreeCamera.cs" />
     <Compile Include="Game\Player\Player.cs" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Editor.Windows.Debug|x64' " >

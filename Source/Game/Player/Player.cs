@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using FlaxEngine;
+﻿using FlaxEngine;
 
-namespace Game;
+namespace Game.Game.Player;
 
 /// <summary>
 /// Player Script.
@@ -72,7 +70,7 @@ public class Player : Script
         if (Input.GetMouseButtonDown((MouseButton.Left)))
         {
             var pos = Input.MousePosition;
-            var ray = Camera.MainCamera.ConvertMouseToRay(pos);
+            var ray = FlaxEngine.Camera.MainCamera.ConvertMouseToRay(pos);
             if (!Physics.RayCast(ray.Position, ray.Direction, out var hit))
                 return;
                
