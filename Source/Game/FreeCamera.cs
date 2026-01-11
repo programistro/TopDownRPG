@@ -41,11 +41,27 @@ public class FreeCamera : Script
             if (hit.Collider.Tag == "Player")
             {
                 // Actor.Position = hit.Point;
-                Actor.LookAt(Target.Position, Vector3.Up);
+                // Actor.LookAt(new Vector3(0, 0, 0), Vector3.Up);
+                // Actor.Orientation = new Quaternion(hit.Point.X, hit.Point.Y, hit.Point.Z, 0);
             }
         }
+        Debug.Log($"Mouse pos = {Input.MousePosition}, {Screen.Size.X}");
+
+        if (Input.GetMouseButton(MouseButton.Middle))
+            HandleEdgeScroll();
     }
 
+    void HandleEdgeScroll()
+    {
+        Float2 pos = Input.MousePosition;
+        if (pos.X > Screen.Size.X - 10) pos.X = 10;
+        else if (pos.X < 10) pos.X = Screen.Size.X - 10;
+        if (pos.Y > Screen.Size.Y - 10) pos.Y = 10;
+        else if (pos.Y < 10) pos.Y = Screen.Size.Y - 10;
+    
+        Input.MousePosition = pos;
+    }
+    
     public override void OnFixedUpdate()
     {
         var inputX = Input.GetAxis("Horizontal");
@@ -58,16 +74,21 @@ public class FreeCamera : Script
         move = camTrans.TransformDirection(move);
         move.Y = 0;
         camTrans.Translation += move * MoveSpeed * Time.DeltaTime;
+        
+        
         if (Input.Mouse.GetButton(MouseButton.Middle))
         {
-            var mouseDelta = new Float2(Input.GetAxis("Mouse X"), Target.Position.Z);
+            var mouseDelta = new Float2(Input.GetAxis("Mouse X"), 0);
             pitch = Mathf.Clamp(pitch + mouseDelta.Y, -88, 88);
             yaw += mouseDelta.X;
             
             var camFactor = Mathf.Saturate(CameraSmoothing * Time.DeltaTime);
-            camTrans.Orientation = Quaternion.Lerp(camTrans.Orientation, Quaternion.Euler(pitch, yaw, 0), camFactor);
+            var orit = Quaternion.Lerp(camTrans.Orientation, Quaternion.Euler(pitch, yaw, 0), camFactor);
+            camTrans.Orientation = orit;
             Debug.Log($"pitch  = {pitch}");
             Debug.Log($"yaw  = {yaw}");
+            
+            
         }
         Actor.Transform = camTrans;
 
