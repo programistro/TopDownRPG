@@ -374,6 +374,7 @@
     <Compile Include="Game\CounterFPS.cs" />
     <Compile Include="Game\Cursor.cs" />
     <Compile Include="Game\ExitOnEsc.cs" />
+    <Compile Include="Game\MainMenu.cs" />
     <Compile Include="Game\Player\Player.cs" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Editor.Windows.Debug|x64' " >

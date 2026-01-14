@@ -57,7 +57,6 @@ public class FreeCamera : Script
         move.Y = 0;
         camTrans.Translation += move * MoveSpeed * Time.DeltaTime;
         
-        
         if (Input.Mouse.GetButton(MouseButton.Middle))
         {
             var mouseDelta = new Float2(Input.GetAxis("Mouse X"), 0);
@@ -69,8 +68,6 @@ public class FreeCamera : Script
             camTrans.Orientation = orit;
             Debug.Log($"pitch  = {pitch}");
             Debug.Log($"yaw  = {yaw}");
-            
-            
         }
         Actor.Transform = camTrans;
 

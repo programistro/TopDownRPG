@@ -11,7 +11,8 @@ public class Cursor : Script
     public CursorLockMode mode;
     public bool CursorVisible;
     public Texture CursorClick;
-    public Control TargetCursor;
+    public ControlReference<Image> TargetCursor;
+    public Texture DefaultCursor;
     
     /// <inheritdoc/>
     public override void OnStart()
@@ -19,7 +20,7 @@ public class Cursor : Script
         Screen.CursorVisible = CursorVisible;
         Screen.CursorLock = mode;
         
-        TargetCursor.Cursor = CursorType.Hand;
+        // TargetCursor.Control.Cursor = CursorType.Hand;
     }
     
     /// <inheritdoc/>
@@ -55,8 +56,13 @@ public class Cursor : Script
 
         if (Input.GetMouseButton(MouseButton.Middle))
         {
-            // TargetCursor.Brush = new TextureBrush(CursorClick);          
+            // TargetCursor.Brush = new TextureBrush(CursorClick);
+            TargetCursor.Control.Brush = new GPUTextureBrush(CursorClick.Texture);
             HandleEdgeScroll();
+        }
+        else
+        {
+            TargetCursor.Control.Brush = new GPUTextureBrush(DefaultCursor.Texture);
         }
     }
 }
