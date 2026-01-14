@@ -2,7 +2,7 @@ using FlaxEngine;
 
 public class FreeCamera : Script
 {
-    [Limit(0, 100), Tooltip("Camera movement speed factor")]
+    [Limit(0, 1000), Tooltip("Camera movement speed factor")]
     public float MoveSpeed { get; set; } = 4;
 
     [Tooltip("Camera rotation smoothing factor")]
@@ -16,6 +16,8 @@ public class FreeCamera : Script
     public float MaxDistance = 1500;
     public float ZoomSpeed = 500;
 
+    public Material Decal;
+    
     public override void OnStart()
     {
         var initialEulerAngles = Actor.Orientation.EulerAngles;
@@ -41,7 +43,22 @@ public class FreeCamera : Script
                 // Actor.Orientation = new Quaternion(hit.Point.X, hit.Point.Y, hit.Point.Z, 0);
             }
         }
-        Debug.Log($"Mouse pos = {Input.MousePosition}, {Screen.Size.X}");  
+        Debug.Log($"Mouse pos = {Input.MousePosition}, {Screen.Size.X}"); 
+        
+        if (Input.GetMouseButtonDown((MouseButton.Right)))
+        {
+            var pos = Input.MousePosition;
+            var ray = FlaxEngine.Camera.MainCamera.ConvertMouseToRay(pos);
+            if (!Physics.RayCast(ray.Position, ray.Direction, out var hit))
+                return;
+               
+            // DebugDraw.DrawSphere(new BoundingSphere(hit.Point, 50), Color.Red);
+            // PrefabManager.SpawnPrefab(Prefab, hit.Point);
+            var decal = Scene.AddChild<Decal>();
+            decal.Position = hit.Point;
+            decal.Material = Decal;
+            decal.Direction = hit.Normal;
+        }
     }
     
     public override void OnFixedUpdate()
@@ -56,6 +73,16 @@ public class FreeCamera : Script
         move = camTrans.TransformDirection(move);
         move.Y = 0;
         camTrans.Translation += move * MoveSpeed * Time.DeltaTime;
+
+        // if (Input.Keyboard.GetKey(KeyboardKeys.E))
+        // {
+        //     Actor.RotateAround(
+        //         Actor.Position,
+        //         Vector3.Up,                         // ось вращения
+        //         MoveSpeed * Time.DeltaTime,        // угол в градусах
+        //         true                                // поворачивать сам актор[web:1]
+        //     );
+        // }
         
         if (Input.Mouse.GetButton(MouseButton.Middle))
         {
