@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game.CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:Game.SpringArmCamera">
+            <summary>
+            SpringArmCamera Script.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.TargetActor">
+            <summary>
+            Target actor to follow.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.CamerActor">
+            <summary>
+            Target camera actor.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.Distance">
+            <summary>
+            Initial spring arm radius to roam around.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.MinDistance">
+            <summary>
+            The minimum distance for spring arm correction.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.MaxDistance">
+            <summary>
+            The maximum distance for spring arm correction.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.MouseSpeed">
+            <summary>
+            Mouse movement speed scale.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.MouseWheelSpeed">
+            <summary>
+            Mouse wheel movement speed scale.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.CollisionLayers">
+            <summary>
+            The physics layers that with which spring arm will collide.
+            </summary>
+        </member>
+        <member name="F:Game.SpringArmCamera.CollisionDistanceBias">
+            <summary>
+            The additional distance to apply when colliding with geometry in order to prevent camera intersecting with it.
+            </summary>
+        </member>
+        <member name="M:Game.SpringArmCamera.OnStart">
+            <inheritdoc />
+        </member>
+        <member name="M:Game.SpringArmCamera.OnUpdate">
+            <inheritdoc />
+        </member>
+        <member name="T:Game.CounterFPS">
+            <summary>
+            CounterFPS Script.
+            </summary>
+        </member>
+        <member name="M:Game.CounterFPS.OnStart">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.CounterFPS.OnEnable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.CounterFPS.OnDisable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.CounterFPS.OnUpdate">
+            <inheritdoc/>
+        </member>
+        <member name="T:Game.Game.Cursor">
+            <summary>
+            Cursor Script.
+            </summary>
+        </member>
+        <member name="M:Game.Game.Cursor.OnStart">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.Game.Cursor.OnEnable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.Game.Cursor.OnDisable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.Game.Cursor.OnUpdate">
+            <inheritdoc/>
+        </member>
+        <member name="T:Game.Game.Player.Player">
+            <summary>
+            Player Script.
+            </summary>
+        </member>
+        <member name="M:Game.Game.Player.Player.OnStart">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.Game.Player.Player.OnEnable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.Game.Player.Player.OnDisable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.Game.Player.Player.OnUpdate">
+            <inheritdoc/>
+        </member>
+        <member name="T:Game.MainMenu">
+            <summary>
+            MainMenu Script.
+            </summary>
+        </member>
+        <member name="M:Game.MainMenu.OnStart">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.MainMenu.OnEnable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.MainMenu.OnDisable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.MainMenu.OnUpdate">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

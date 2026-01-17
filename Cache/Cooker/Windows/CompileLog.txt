@@ -1,0 +1,77 @@
+[00:00:006] Flax.Build 1.0.0
+[00:00:007]   Arguments: log -logfile=C:\Projects/Flax/TopDownRPG/Cache/Cooker/Windows/CompileLog.txt -build -mutex -buildtargets=GameTarget -platform=Windows -arch=x64 -configuration=Development -aotMode=None -dotnet=8
+[00:00:007]   Workspace: C:\Projects\Flax\TopDownRPG
+[00:00:007]   Engine: C:\Users\Katana\AppData\Local\SeedLauncher\Versions\1.11
+[00:00:007]   .NET 10.0.1
+[00:00:011] Loading project file from "C:\Projects\Flax\TopDownRPG\TopDownRPG.flaxproj"...
+[00:00:049] Loading project file from "C:\Users\Katana\AppData\Local\SeedLauncher\Versions\1.11\Flax.flaxproj"...
+[00:00:051] Loaded project Flax, version 1.11.6802
+[00:00:051] Loaded project TopDownRPG, version 1.0
+[00:00:090] Engine build version: 1.11.6802
+[00:00:120] Building targets...
+[00:00:144] Missing Android SDK. Cannot build for Android platform.
+[00:00:145] Missing Linux Toolchain. Cannot build for Linux platform.
+[00:00:165] Missing Windows SDK. Cannot build for Windows platform.
+[00:00:166] Building C# only
+[00:00:166] Building target GameTarget in Development for Windows x64
+[00:00:173] Building referenced target Flax
+[00:00:181] Missing VULKAN_SDK environment variable. Cannot build Vulkan.
+[00:00:181] Building for Windows without Vulkan rendering backend (Vulkan SDK is missing)
+[00:00:186] Parsing API bindings for Profiler (FlaxEngine)
+[00:00:289] Parsing API bindings for Platform (FlaxEngine)
+[00:00:397] Parsing API bindings for Core (FlaxEngine)
+[00:01:254] Parsing API bindings for Physics (FlaxEngine)
+[00:01:430] Parsing API bindings for TextureTool (FlaxEngine)
+[00:01:436] Parsing API bindings for ModelTool (FlaxEngine)
+[00:01:455] Parsing API bindings for Graphics (FlaxEngine)
+[00:01:797] Parsing API bindings for Utilities (FlaxEngine)
+[00:01:809] Parsing API bindings for Particles (FlaxEngine)
+[00:01:827] Parsing API bindings for Content (FlaxEngine)
+[00:01:927] Parsing API bindings for Renderer (FlaxEngine)
+[00:01:962] Found the following .NET SDK versions: 10.0.101, 8.0.416
+[00:01:964] Found the following .NET runtime versions: 10.0.1, 8.0.22
+[00:01:969] Using .NET SDK 8.0.416, runtime 8.0.22 (C:\Program Files\dotnet\)
+[00:01:972]   - Host Runtime for Windows x64
+[00:01:972]   - Host Runtime for Windows x86
+[00:01:972]   - Host Runtime for Windows ARM64
+[00:01:975] Parsing API bindings for Scripting (FlaxEngine)
+[00:02:011] Parsing API bindings for Serialization (FlaxEngine)
+[00:02:017] Parsing API bindings for Level (FlaxEngine)
+[00:02:186] Parsing API bindings for Navigation (FlaxEngine)
+[00:02:202] Parsing API bindings for AI (FlaxEngine)
+[00:02:220] Parsing API bindings for Visject (FlaxEngine)
+[00:02:230] Parsing API bindings for Animations (FlaxEngine)
+[00:02:351] Parsing API bindings for Audio (FlaxEngine)
+[00:02:388] Parsing API bindings for Video (FlaxEngine)
+[00:02:400] Parsing API bindings for Debug (FlaxEngine)
+[00:02:479] Parsing API bindings for Foliage (FlaxEngine)
+[00:02:493] Parsing API bindings for Render2D (FlaxEngine)
+[00:02:551] Parsing API bindings for Input (FlaxEngine)
+[00:02:590] Parsing API bindings for Networking (FlaxEngine)
+[00:02:668] Parsing API bindings for Streaming (FlaxEngine)
+[00:02:673] Parsing API bindings for Terrain (FlaxEngine)
+[00:02:703] Parsing API bindings for Threading (FlaxEngine)
+[00:02:711] Parsing API bindings for Localization (FlaxEngine)
+[00:02:721] Parsing API bindings for UI (FlaxEngine)
+[00:02:730] Parsing API bindings for Online (FlaxEngine)
+[00:02:736] Parsing API bindings for Engine (FlaxEngine)
+[00:02:773] Skipping build for target FlaxGame
+[00:02:795] Generating binary module bindings for Game
+[00:02:800] Skipped saving file to C:\Projects\Flax\TopDownRPG\Source\Game.Gen.cs
+[00:02:800] Building module Game
+[00:02:807] Saved file to C:\Projects\Flax\TopDownRPG\Cache/Intermediate\GameTarget\Windows\x64\Development\Game.CSharp.response
+[00:02:822] Saved file to C:\Projects\Flax\TopDownRPG\Binaries\GameTarget\Windows\x64\Development\GameTarget.Build.json
+[00:02:829] Found 3 valid and 0 invalid actions in Task Graph cache
+[00:02:829] 
+[00:02:829] Total 3 tasks
+[00:02:830] Executing 3 tasks using 3 threads
+[00:02:832] Compiling C:\Projects\Flax\TopDownRPG\Binaries\GameTarget\Windows\x64\Development\Game.CSharp.dll
+[00:02:892] C:\Users\Katana\AppData\Local\SeedLauncher\Versions\1.11\Source\Platforms\DotNet\Newtonsoft.Json.xml
+[00:02:894] C:\Users\Katana\AppData\Local\SeedLauncher\Versions\1.11\Source\Platforms\DotNet\Newtonsoft.Json.dll
+[00:02:898] Скопировано файлов: 1.
+[00:02:900] Скопировано файлов: 1.
+[00:05:938] C:\Projects\Flax\TopDownRPG\Source\Game\Camera\FreeCamera.cs(37,17,37,33): warning CS0618: 'Actor.Tag' is obsolete: 'Use AddTag instead'
+[00:05:938] C:\Projects\Flax\TopDownRPG\Source\Game\Player\Player.cs(47,21,47,30): warning CS0169: The field 'Player._velocity' is never used
+[00:05:949] Done!
+[00:05:955] Total time: 00:00:05.9743766
+[00:05:955] End.
