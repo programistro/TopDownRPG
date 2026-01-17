@@ -74,15 +74,25 @@ public class FreeCamera : Script
         move.Y = 0;
         camTrans.Translation += move * MoveSpeed * Time.DeltaTime;
 
-        // if (Input.Keyboard.GetKey(KeyboardKeys.E))
-        // {
-        //     Actor.RotateAround(
-        //         Actor.Position,
-        //         Vector3.Up,                         // ось вращения
-        //         MoveSpeed * Time.DeltaTime,        // угол в градусах
-        //         true                                // поворачивать сам актор[web:1]
-        //     );
-        // }
+        if (Input.Keyboard.GetKey(KeyboardKeys.X))
+        {
+            var top = (new Vector3(0, MoveSpeed, 0));
+            camTrans.Translation += top * Time.DeltaTime;
+        }
+        if (Input.Keyboard.GetKey(KeyboardKeys.Z))
+        {
+            var top = (new Vector3(0, -MoveSpeed, 0));
+            camTrans.Translation += top * Time.DeltaTime;
+        }
+        
+        if (Input.Keyboard.GetKey(KeyboardKeys.E))
+        {
+            camTrans.Orientation = Quaternion.Euler(0, MoveSpeed * Time.DeltaTime, 0) * camTrans.Orientation;
+        }
+        if (Input.Keyboard.GetKey(KeyboardKeys.Q))
+        {
+            camTrans.Orientation = Quaternion.Euler(0, -MoveSpeed * Time.DeltaTime, 0) * camTrans.Orientation;
+        }
         
         if (Input.Mouse.GetButton(MouseButton.Middle))
         {
